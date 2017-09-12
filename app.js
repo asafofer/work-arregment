@@ -2,7 +2,7 @@
  * @Author: Asaf Ofer
  * @Date:   11-09-2017 21:33
  * @Last modified by:   Asaf Ofer
- * @Last modified time: 11-09-2017 22:35
+ * @Last modified time: 12-09-2017 18:32
  */
 
 const xlsx = require('xlsx');
@@ -10,7 +10,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-app.use(express.static('public'));
+app.use('/assets', express.static(__dirname + '/assets'));
 
 app.get('/', (req, res) => {
   console.log('working');
