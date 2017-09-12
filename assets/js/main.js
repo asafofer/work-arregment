@@ -2,7 +2,7 @@
  * @Author: Asaf Ofer
  * @Date:   12-09-2017 17:17
  * @Last modified by:   Asaf Ofer
- * @Last modified time: 12-09-2017 18:28
+ * @Last modified time: 12-09-2017 18:40
  */
 
 
@@ -34,7 +34,7 @@ reader.onload = function(e) {
         var sCSV = XLS.utils.make_csv(cfb.Sheets[sheetName]);
         var oJS = XLS.utils.sheet_to_json(cfb.Sheets[sheetName]);
 
-        $("#my_file_output").html(sCSV);
+        // $("#my_file_output").html(sCSV);
         oJS.forEach(row => {
           console.log(row);
         });
