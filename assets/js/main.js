@@ -2,7 +2,7 @@
  * @Author: Asaf Ofer
  * @Date:   12-09-2017 17:17
  * @Last modified by:   Asaf Ofer
- * @Last modified time: 12-09-2017 18:40
+ * @Last modified time: 13-09-2017 10:29
  */
 
 
@@ -38,6 +38,7 @@ reader.onload = function(e) {
         oJS.forEach(row => {
           console.log(row);
         });
+        console.table(oJS);
     });
 };
 
